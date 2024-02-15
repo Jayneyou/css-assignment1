@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    background-image: url("https://jayneyou.github.io/css-assignment1.io/img/header.jpg");
+    background-image: url("https://jayneyou.github.io/css-assignment1/img/header.jpg");
     background-size: cover;
     background-color: dimgrey;
     width: 100%;
@@ -72,7 +72,7 @@ main>section p {
 
 /* artist */
 main>aside {
-    background-image: url("https://jayneyou.github.io/css-assignment1.io/img/singer.jpeg");
+    background-image: url("https://jayneyou.github.io/css-assignment1/img/singer.jpeg");
     display: flex;
     flex-direction: column;
     flex-basis: 30%;
