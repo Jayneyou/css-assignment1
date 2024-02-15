@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    background-image: url("/img/header.jpg");
+    background-image: url("img/header.jpg");
     background-size: cover;
     background-color: dimgrey;
     width: 100%;
@@ -72,7 +72,7 @@ main>section p {
 
 /* artist */
 main>aside {
-    background-image: url("/img/singer.jpeg");
+    background-image: url("img/singer.jpeg");
     display: flex;
     flex-direction: column;
     flex-basis: 30%;
