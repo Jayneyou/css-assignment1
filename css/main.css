@@ -1,71 +1,126 @@
-@charset "utf-8";
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Rock+Salt&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Grenze+Gotisch:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Grenze+Gotisch:wght@500&family=Pathway+Gothic+One&display=swap');
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
 
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
 
 body {
-    padding: 30px;
-}
-
-.container {
-    display: flex;
-    width: 65%;
-    margin: 40px auto;
-    margin-top: -40px;
-    text-align: justify;
-}
-
-h3 {
-    font-family: 'Grenze Gotisch', serif;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.column {
-    flex: 1;
-    padding: 20px;
-    border: 1px solid #ffffff;
-    box-sizing: border-box;
-    line-height: 1.2;
-    font-size: 15px;
-    font-family: 'Grenze Gotisch', serif;
-}
-
-.title {
-    text-align: center;
-    font-weight: bold;
-    font-size: 40px;
-    width: 75%;
-    margin-top: 45px;
-    margin-bottom: -30px;
-    text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
-    transform: scale(1, 2);
-}
-
-.title2 {
     width: 100%;
-    font-weight: bold;
-    font-size: 20px;
     display: flex;
-    text-transform: uppercase;
-    font-family: 'Grenze Gotisch', serif;
-    margin: 40px auto;
-    margin-left: 19%;
-    text-align: justify;
+    flex-direction: column;
 }
 
-.editorial {
-    width: 80px;
-    float: left;
-    font-size: 20px;
-    padding: 5px;
-    border: 2px solid black;
-    margin: 20px auto;
-    margin-left: 19%;
-    font-family: 'Eczar', serif;
-    font-family: 'Grenze Gotisch', serif;
+header {
+    background-image: url("/img/header.jpg");
+    background-size: cover;
+    background-color: dimgrey;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.7rem;
+}
+
+/* song title */
+header h1 {
+    font-size: 2rem;
+    font-family: "Rock Salt", cursive;
+    margin: 0;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* sub-title */
+header h3 {
+    font-family: "Architects Daughter", cursive;
+    font-size: 1.5rem;
+    text-align: right;
+    margin: 0;
+    width: 65%;
+}
+
+main {
+    background-color: black;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* lyrics */
+main>section {
+    background-color: #E5E1DA;
+    color: black;
+    flex-basis: 70%;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+main>section p {
+    line-height: 1.5;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+/* artist */
+main>aside {
+    background-image: url("/img/singer.jpeg");
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.7rem 1.2rem;
+}
+
+/* artist title */
+main>aside h4 {
+    font-size: 1.25rem;
+    font-family: "Rock Salt", cursive;
+    margin: 1rem auto;
+}
+
+/* artist paragraph */
+main>aside p {
+    width: 85%;
+    font-size: 0.8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* artist image */
+main>aside img {
+    width: 85%;
+    margin-top: 1rem;
+}
+
+/* footer */
+footer {
+    background-color: darkgray;
+    color: #fff
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: "Architects Daughter", cursive;
+}
+
+/* media query */
+@media screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
 }
